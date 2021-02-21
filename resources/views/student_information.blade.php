@@ -1,0 +1,1 @@
+Student Name is <?php echo $name;?>
