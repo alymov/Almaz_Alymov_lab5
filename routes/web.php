@@ -19,3 +19,7 @@ Route::get('/', function () {
 
 
 Route::get('/student/{id}', "StudentController@show");
+
+Route::get('/student_date/{date}', "StudentController@showDate");
+
+Route::get('/student_age/{age}', "StudentController@showAge");

@@ -56,6 +56,16 @@ class StudentController extends Controller
         return view("student_information", ["name"=>$students[$id]]);
     }
 
+    public function showDate($date)
+    {
+        return view("student_date") -> with("date", $date);
+    }
+
+    public function showAge($age)
+    {
+        return view("student_age", compact('age'));
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
